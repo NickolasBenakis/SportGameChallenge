@@ -1,0 +1,48 @@
+body {
+  background-image: url("https://www.hireapitch.com/images/List-your-venue.jpg");
+  background-size: cover;
+  color: rgb(5, 5, 5);
+  font-family: "Helvetica";
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 740px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+#image {
+  width: 100px;
+  height: 100px;
+  float: top;
+  overflow: auto;
+}
+
+#description {
+  max-height: 500px;
+  overflow: auto;
+}
+
+#favoriteme {
+  background: gold;
+  float: right;
+}
+#deleteme {
+  background: red;
+  float: right;
+}
+
